@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <link href = "font/stylesheet.css" rel = "stylesheet">
+    <title>VersusHack</title>
+    <script>
+        window.onload=function(){
+        document.getElementById('main').style.display='block';
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <svg style="display: none;">
+        <symbol id="discord" viewBox="0 0 157.728 157.731">
+            <g>
+                <path d="M78.864,0c43.556,0,78.863,35.308,78.863,78.864c0,43.552-35.308,78.868-78.863,78.868   C35.308,157.731,0,122.416,0,78.864C0,35.308,35.308,0,78.864,0z" fill="#8C9EFF"/><path d="M113.101,53.34c0,0-9.76-7.635-21.284-8.514l-1.043,2.076c10.425,2.552,15.2,6.207,20.199,10.695   c-8.612-4.394-17.112-8.514-31.927-8.514c-14.815,0-23.322,4.12-31.926,8.514c4.985-4.488,10.677-8.545,20.192-10.695l-1.036-2.076   c-12.099,1.145-21.284,8.514-21.284,8.514S34.09,69.143,32.221,100.166c10.985,12.672,27.669,12.771,27.669,12.771l3.487-4.649   c-5.923-2.059-12.61-5.741-18.386-12.378c6.889,5.209,17.293,10.642,34.055,10.642c16.762,0,27.158-5.426,34.055-10.642   c-5.783,6.637-12.47,10.319-18.386,12.378l3.487,4.649c0,0,16.677-0.099,27.669-12.771C123.995,69.143,113.101,53.34,113.101,53.34   z M65.211,91.651c-4.117,0-7.449-3.809-7.449-8.514c0-4.701,3.333-8.513,7.449-8.513c4.117,0,7.45,3.812,7.45,8.513   C72.661,87.843,69.328,91.651,65.211,91.651z M92.881,91.651c-4.117,0-7.45-3.809-7.45-8.514c0-4.701,3.333-8.513,7.45-8.513   c4.116,0,7.449,3.812,7.449,8.513C100.33,87.843,96.99,91.651,92.881,91.651z" fill="#FFFFFF"/>
+            </g>
+        </symbol>
+        <symbol id="telegram" viewBox="0 0 256 256">
+            <g>
+                <path d="M128,0 C57.307,0 0,57.307 0,128 L0,128 C0,198.693 57.307,256 128,256 L128,256 C198.693,256 256,198.693 256,128 L256,128 C256,57.307 198.693,0 128,0 L128,0 Z" fill="#40B3E0"></path>
+				<path d="M190.2826,73.6308 L167.4206,188.8978 C167.4206,188.8978 164.2236,196.8918 155.4306,193.0548 L102.6726,152.6068 L83.4886,143.3348 L51.1946,132.4628 C51.1946,132.4628 46.2386,130.7048 45.7586,126.8678 C45.2796,123.0308 51.3546,120.9528 51.3546,120.9528 L179.7306,70.5928 C179.7306,70.5928 190.2826,65.9568 190.2826,73.6308" fill="#FFFFFF"></path>
+				<path d="M98.6178,187.6035 C98.6178,187.6035 97.0778,187.4595 95.1588,181.3835 C93.2408,175.3085 83.4888,143.3345 83.4888,143.3345 L161.0258,94.0945 C161.0258,94.0945 165.5028,91.3765 165.3428,94.0945 C165.3428,94.0945 166.1418,94.5735 163.7438,96.8115 C161.3458,99.0505 102.8328,151.6475 102.8328,151.6475" fill="#D2E5F1"></path>
+				<path d="M122.9015,168.1154 L102.0335,187.1414 C102.0335,187.1414 100.4025,188.3794 98.6175,187.6034 L102.6135,152.2624" fill="#B5CFE4"></path>
+            </g>
+        </symbol>
+        <symbol id="vk" viewBox="0 0 112.196 112.196">
+            <g>
+                <g><circle cx="56.098" cy="56.098" id="XMLID_11_" r="56.098" style="fill:#4D76A1;"/></g><path d="M53.979,80.702h4.403c0,0,1.33-0.146,2.009-0.878   c0.625-0.672,0.605-1.934,0.605-1.934s-0.086-5.908,2.656-6.778c2.703-0.857,6.174,5.71,9.853,8.235   c2.782,1.911,4.896,1.492,4.896,1.492l9.837-0.137c0,0,5.146-0.317,2.706-4.363c-0.2-0.331-1.421-2.993-7.314-8.463   c-6.168-5.725-5.342-4.799,2.088-14.702c4.525-6.031,6.334-9.713,5.769-11.29c-0.539-1.502-3.867-1.105-3.867-1.105l-11.076,0.069   c0,0-0.821-0.112-1.43,0.252c-0.595,0.357-0.978,1.189-0.978,1.189s-1.753,4.667-4.091,8.636c-4.932,8.375-6.904,8.817-7.71,8.297   c-1.875-1.212-1.407-4.869-1.407-7.467c0-8.116,1.231-11.5-2.397-12.376c-1.204-0.291-2.09-0.483-5.169-0.514   c-3.952-0.041-7.297,0.012-9.191,0.94c-1.26,0.617-2.232,1.992-1.64,2.071c0.732,0.098,2.39,0.447,3.269,1.644   c1.135,1.544,1.095,5.012,1.095,5.012s0.652,9.554-1.523,10.741c-1.493,0.814-3.541-0.848-7.938-8.446   c-2.253-3.892-3.954-8.194-3.954-8.194s-0.328-0.804-0.913-1.234c-0.71-0.521-1.702-0.687-1.702-0.687l-10.525,0.069   c0,0-1.58,0.044-2.16,0.731c-0.516,0.611-0.041,1.875-0.041,1.875s8.24,19.278,17.57,28.993   C44.264,81.287,53.979,80.702,53.979,80.702L53.979,80.702z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;"/>
+            </g>
+        </symbol>
+    </svg>
+    <div id=main style="display:none;">
+
+    <div class="page">
+        <img class="bg" src="assets/images/bg.svg" alt="">
+        <img class="bg1" src="assets/images/bg 1.svg" alt="">
+        <img class="bg2" src="assets/images/bg 2.svg" alt="">
+        <img class="bg3" src="assets/images/bg 3.svg" alt="">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+
+                    <nav class="nav" id="nav">
+                        <a class="nav__item" href="error.html">Помощь</a>
+                        <a class="nav__item" href="error.html">Контакты</a>
+                        <a class="nav__item" href="news.html">Новости</a>
+                        <a class="nav__item nav__item--bp" href="error.html" id="link">Тех поддержка</a>
+                        <ul class="header__icons nav__item--bp" id="logo">
+                            <li class="header__icons-item">
+                                <a href=""><img src="assets/images/icon1.svg" alt=""></a>
+                            </li>
+                            <li class="header__icons-item">
+                                <a href=""><img src="assets/images/icon2.svg" alt=""></a>
+                            </li>
+                            <li class="header__icons-item">
+                                <a href=""><img src="assets/images/icon3.svg" alt=""></a>
+                            </li>
+                        </ul>
+
+                    </nav>
+
+                    <div class="header__logo">
+                        <a class="header__logo-link" href="index.html">
+                            <div class="header__logo-img">
+                                <img class="img" src="assets/images/HeaderLogo.svg" alt="">
+                            </div>
+                            <div class="header__logo-title">
+                                <img class="img" src="assets/images/HeaderText.svg" alt="">
+
+                                <img class="img" src="assets/images/HeaderSub.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+
+                    <button class="burger" type="button" id="navToggle">
+                        <span class="burger__item"></span>
+                    </button>
+
+                    <div class="header__text">
+                        <a class="header__inner-help-text" href="#">Тех поддержка</a>
+                    </div>
+
+                    <ul class="header__icons">
+                        <li class="header__icons-item">
+                            <a href=""><img src="assets/images/icon1.svg" alt=""></a>
+                        </li>
+                        <li class="header__icons-item">
+                            <a href=""><img src="assets/images/icon2.svg" alt=""></a>
+                        </li>
+                        <li class="header__icons-item">
+                            <a href=""><img src="assets/images/icon3.svg" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- Desckription -->
+        <div class="desck">
+            <div class="container">
+                <div class="desck__inner">
+                    <div class="desck__left">
+                        <div class="desck__left-img" data-modal="#modal_project_1">
+                            <img class="desck__photo img" src="assets/images/fort.jpg" alt="">
+                        </div>
+                        <div class="desck__play">
+                            <div class="desck__shadow">
+                                <button class="intro__btn" type="button" data-modal="#modal_project_2">
+                                    <img src="assets/images/Playv.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="modal" id="modal_project_2">
+                            <div class="modal__dialog">
+
+                                <button class="modal__close" type="button" data-close>
+                                    <img src="assets/images/close.svg" alt="Close">
+                                </button>
+
+                                <div class="modal-work">
+                                    <iframe width="700" height="315" src="https://www.youtube.com/embed/aTLCSFq9TnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div><!--/.modal-work -->
+
+                            </div><!-- /.modal__dialog -->
+                        </div><!-- /.modal -->
+
+                        <div class="desck__content">
+                            <div class="sim-slider" id="SimSlider">
+                                <a class="image-popup-no-margins" href="assets/images/f1.png">
+                                    <img src="assets/images/f1.png">
+                                </a>
+                                <a class="image-popup-no-margins" href="assets/images/f2.png">
+                                    <img src="assets/images/f2.png">
+                                </a>
+                                <a class="image-popup-no-margins" href="assets/images/f3.png">
+                                    <img src="assets/images/f3.png">
+                                </a>
+                                <a class="image-popup-no-margins" href="assets/images/f1.png">
+                                    <img src="assets/images/f1.png">
+                                </a>
+                                <a class="image-popup-no-margins" href="assets/images/f2.png">
+                                    <img src="assets/images/f2.png">
+                                </a>
+                                <a class="image-popup-no-margins" href="assets/images/f3.png">
+                                    <img src="assets/images/f3.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desck__right">
+                        <div class="desck__title">Приватный Spoofer от разработчиков Hyper Collision</div>
+                        <div class="desck__subtitle">Требования для использования: </div>
+                        <div class="desck__col">
+                            <ul class="desck__list">
+                                <li class="desck__list-item">Поддерживаемые ОС: Windows 10 x64 Pro/Home</li>
+                                <li class="desck__list-item">Поддерживаемые процессоры: Intel / AMD</li>
+                                <li class="desck__list-item">Поддерживаемые ОС: Windows 10 x64 Pro/Home </li>
+                                <li class="desck__list-item">Поддерживаемые процессоры: Intel / AMD</li>
+                            </ul>
+                            <div class="desck__btn">
+                                <a href="game.html" class="desck__btn-item btn btn--pink btn--small"><span>200₽ - 1 день</span></a>
+                                <a href="game.html" class=" desck__btn-item btn btn--pink btn--small"><span>700₽ - 7 день</span></a>
+                                <a href="game.html" class=" desck__btn-item btn btn--pink btn--small"><span>100₽ - 3 день</span></a>
+                                <a href="game.html" class=" desck__btn-item btn btn--pink btn--small"><span>200₽ - 1 день</span></a>
+                                <a href="game.html" class=" desck__btn-item btn btn--pink btn--small"><span>700₽ - 7 день</span></a>
+                                <a href="game.html" class=" desck__btn-item btn btn--pink btn--small"><span>100₽ - 3 день</span></a>
+                            </div>
+
+                            <div class="desck__text">
+                                <p>На сайт было добавлено несколько различных платёжных систем. Если у вас не получается оплатить одним провайдером, вы можете воспользоваться другим. Если у вас вообще не проходит оплата, обратитесь к НАМ</p>
+                            </div>
+
+                            <div class="dontw">
+                                <div class="dontw__text">При покупке Вы принимаете условия <br> <span><a class="dontw__link" href="error.html">пользовательского соглашения</a></span>
+                                </div>
+                                <div class="dontw__btn">
+                                    <p>Не работает чит?</p>
+                                    <a href="game.html" class="btn btn--dontw"><span>Ответ тут</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="func__slider" id="funcSlider">
+                    <div class="func_boug" id="funcLinkLeft">
+                        <div class="func__pad">Описание</div>
+                    </div>
+
+                    <div class="func_boug" id="funkLinkRight">
+                        <div class="func__pad">Функционал</div>
+                    </div>
+                </div>
+
+                <div class="func" id="func">
+                    <div class="func__title">Описание приватного Spoofer</div>
+                    <div class="func__flex">
+                        <div class="func__left">
+                            <div class="func__left-text">На нашем ресурсе <span>Versus Hack</span> вы можете найти много приватного программного обеспечения для различный популярных online игр. И эта страница не исключение! Представляем вашему вниманию приватный Spoofer (спуфер) от Hyper Collisoin. В большинстве случаев пользователи хотят приобрести данное <span>Spoofer</span> (Спуфер),что бы обойти блокировку по "железа", либо обезопасить свое "железо" от возможной блокировки за использование стороннего программного обеспечения. Актуальность данного ПО обусловлена тем, что крайне большое количество игроков используют читы. Поведаю вам не много о данном HWID Spoofer который разработал кодер Qionyx который написал еще много приватных обеспечений лдля многих популярных онлайн игр и проектов, с которыми вы можете ознакомиться на нашем сайте. Наш ресурс Versus Hack , имеет желание выразить свое мнение по поводу Spoofer (спуфер) от Hyper Collisoin и сказать вам, что блокировку по железу крайне тяжело обойти и бывают ситуации, что вам данное ПО может не помочь на все 100%. О принципах работы именно этого HWID Spoofer (спуфера), вы можете прочитать ниже, просим вас отнестись ко всем этим нюансам с пониманием и терпением!</div>
+                        </div>
+                        <div class="func__right">
+                            <div class="func__right-photo"><img class="func__photo img" src="assets/images/funck.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container container--min">
+                    <div class="func__list" id="funcList">
+                        <div class="func__list-left">
+                            <ul class="func__list-aim">
+                                <div class="list__title">Aimbot</div>
+                                <li class="aim__item">Включить / Enable</li>
+                                <li class="aim__item">Показ кости</li>
+                                <li class="aim__item">Радиус / Radius</li>
+                                <li class="aim__item">Плавность / Smoothness</li>
+                                <li class="aim__item">Кнопка активации / Activation button</li>
+                                <li class="aim__item">Кость / Bone</li>
+                                <li class="aim__item">Игнорировать нокаутированных / Ignore knockoutsl</li>
+                                <li class="aim__item">Ближняя кость / Near Bone</li>
+                                <li class="aim__item">Контроль отдачи / Recoil control</li>
+                            </ul>
+
+                            <ul class="func__list-aim">
+                                <div class="list__title">Visual</div>
+                                <li class="aim__item">Игроков на экране / Players on the screen</li>
+                                <li class="aim__item">Игроков вне экрана / Offscreen players</li>
+                                <li class="aim__item">Дистанция / Distance</li>
+                                <li class="aim__item">Ники / Nick</li>
+                                <li class="aim__item">Команда / Team</li>
+                                <li class="aim__item">ХП / HP</li>
+                                <li class="aim__item">Броня / Armor</li>
+                                <li class="aim__item">Голова / Head</li>
+                                <li class="aim__item">Обводка / Outline</li>
+                                <li class="aim__item">Линии / Lines</li>
+                                <li class="aim__item">Радар / Radar</li>
+                                <li class="aim__item">Масштаб радара / Radar scale</li>
+                                <li class="aim__item">Размер моего игрока / My player size</li>
+                                <li class="aim__item">Размер врага / Enemy size</li>
+                            </ul>
+                        </div>
+
+                        <div class="func__list-right">
+                            <ul class="func__list-aim">
+                                <div class="list__title">Loot</div>
+                                <li class="aim__item">Использовать иконки / Use icons</li>
+                                <li class="aim__item">Штурмовые Винтовки / Assault Rifles</li>
+                                <li class="aim__item">Пистолетыпулеметы / Submachine guns</li>
+                                <li class="aim__item">Ручные пулеметы / Light machine guns</li>
+                                <li class="aim__item">Снайперские винтовки / Sniper rifles</li>
+                                <li class="aim__item">Дробовики / Shotguns</li>
+                                <li class="aim__item">Пистолеты / Pistols</li>
+                                <li class="aim__item">Патроны / Cartridges</li>
+                                <li class="aim__item">Аптечки / First aid kits</li>
+                                <li class="aim__item">Гранаты / Grenades</li>
+                                <li class="aim__item">Броня / Armor</li>
+                                <li class="aim__item">Шлем / Helmet</li>
+                                <li class="aim__item">Рюкзак / BackPack</li>
+                                <li class="aim__item">Нокдаун щит / Knock Down Shield</li>
+                                <li class="aim__item">Магазины / Magazines</li>
+                                <li class="aim__item">Подстволы / Stock</li>
+                                <li class="aim__item">Стаблизаторы / Stablizer</li>
+                            </ul>
+
+                            <ul class="func__list-aim">
+                                <div class="list__title">Mics</div>
+                                <li class="aim__item">Прицел / Scope</li>
+                            </ul>
+
+                            <ul class="func__list-aim">
+                                <div class="list__title">Settings</div>
+                                <li class="aim__item">Включить Английский язык / Enable English</li>
+                                <li class="aim__item">Вертикальная синхронизация / Vertical synchronization</li>
+                                <li class="aim__item">Обводка оверлея / Overlay outline</li>
+                                <li class="aim__item">Потребление ресурсов / Resource consumption</li>
+                                <li class="aim__item"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h1 class="chet__title chet__title--aim">Другие читы для Название игры</h1>
+                <div class="chet__list">
+                    <div class="chet__item">
+                        <div class="chet__photo">
+                            <img src="assets/images/chetApex.jpg" alt="" class="news__item-photo img">
+                        </div>
+                        <div class="chet__content">
+
+                            <div class="chet__inner">
+                                <div class="chet__inner-title">Название</div>
+                                <div class="chet__text">Use at risk</div>
+                                <div class="chet__cost">от 2000 P</div>
+                                <a href="desck.html" class="btn btn--pink btn--small"><span>Подробнее</span></a>
+                            </div>
+                            <ul class="chet__list-item">
+                                <li class="chek__list-link" href="">aim</li>
+                                <li class="chek__list-link" href="">vh</a>
+                                <li class="chek__list-link" href="">aim</a>
+                                <li class="chek__list-link" href="">vh</a>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="chet__item">
+                        <div class="chet__photo">
+                            <img src="assets/images/chetApex.jpg" alt="" class="news__item-photo img">
+                        </div>
+                        <div class="chet__content">
+
+                            <div class="chet__inner">
+                                <div class="chet__inner-title">Название</div>
+                                <div class="chet__text chet__text-sec">On Update</div>
+                                <div class="chet__cost">от 2000 P</div>
+                                <a href="game.html" class="btn btn--pink btn--small"><span>Подробнее</span></a>
+                            </div>
+                            <ul class="chet__list-item">
+                                <li class="chek__list-link" href="">aim</li>
+                                <li class="chek__list-link" href="">vh</a>
+                                <li class="chek__list-link" href="">aim</a>
+                                <li class="chek__list-link" href="">vh</a>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="chet__item">
+                        <div class="chet__photo">
+                            <img src="assets/images/chetApex.jpg" alt="" class="news__item-photo img">
+                        </div>
+                        <div class="chet__content">
+
+                            <div class="chet__inner">
+                                <div class="chet__inner-title">Название</div>
+                                <div class="chet__text chet__text-th">Detected</div>
+                                <div class="chet__cost">от 2000 P</div>
+                                <a href="game.html" class="btn btn--pink btn--small"><span>Подробнее</span></a>
+                            </div>
+                            <ul class="chet__list-item">
+                                <li class="chek__list-link" href="">aim</li>
+                                <li class="chek__list-link" href="">vh</a>
+                                <li class="chek__list-link" href="">aim</a>
+                                <li class="chek__list-link" href="">vh</a>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="chet__list">
+                    <div class="chet__item">
+                        <div class="chet__photo">
+                            <img src="assets/images/chetApex.jpg" alt="" class="news__item-photo img">
+                        </div>
+                        <div class="chet__content">
+
+                            <div class="chet__inner">
+                                <div class="chet__inner-title">Название</div>
+                                <div class="chet__text">Use at risk</div>
+                                <div class="chet__cost">от 2000 P</div>
+                                <a href="game.html" class="btn btn--pink btn--small"><span>Подробнее</span></a>
+                            </div>
+                            <ul class="chet__list-item">
+                                <li class="chek__list-link" href="">aim</li>
+                                <li class="chek__list-link" href="">vh</a>
+                                <li class="chek__list-link" href="">aim</a>
+                                <li class="chek__list-link" href="">vh</a>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="chet__item">
+                        <div class="chet__photo">
+                            <img src="assets/images/chetApex.jpg" alt="" class="news__item-photo img">
+                        </div>
+                        <div class="chet__content">
+
+                            <div class="chet__inner">
+                                <div class="chet__inner-title">Название</div>
+                                <div class="chet__text chet__text-sec">On Update</div>
+                                <div class="chet__cost">от 2000 P</div>
+                                <a href="game.html" class="btn btn--pink btn--small"><span>Подробнее</span></a>
+                            </div>
+                            <ul class="chet__list-item">
+                                <li class="chek__list-link" href="">aim</li>
+                                <li class="chek__list-link" href="">vh</a>
+                                <li class="chek__list-link" href="">aim</a>
+                                <li class="chek__list-link" href="">vh</a>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="chet__item">
+                        <div class="chet__photo">
+                            <img src="assets/images/chetApex.jpg" alt="" class="news__item-photo img">
+                        </div>
+                        <div class="chet__content">
+
+                            <div class="chet__inner">
+                                <div class="chet__inner-title">Название</div>
+                                <div class="chet__text chet__text-th">Detected</div>
+                                <div class="chet__cost">от 2000 P</div>
+                                <a href="game.html" class="btn btn--pink btn--small"><span>Подробнее</span></a>
+                            </div>
+                            <ul class="chet__list-item">
+                                <li class="chek__list-link" href="">aim</li>
+                                <li class="chek__list-link" href="">vh</a>
+                                <li class="chek__list-link" href="">aim</a>
+                                <li class="chek__list-link" href="">vh</a>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Partners -->
+        <div class="partners">
+
+            <div class="container">
+                <h2 class="partners__title">Наши партнеры</h2>
+                <div class="partners__inner">
+                    <div class="reviews__slider" id="reviewsSlider">
+                        <div>
+                            <div class="partners__item">
+                                <img class="partners__logo" src="assets/images/partners1.svg" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="partners__item">
+                                <img class="partners__logo" src="assets/images/partners2.svg" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="partners__item">
+                                <img class="partners__logo" src="assets/images/partners1.svg" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="partners__item">
+                                <img class="partners__logo" src="assets/images/partners2.svg" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="partners__item">
+                                <img class="partners__logo" src="assets/images/partners1.svg" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="partners__item">
+                                <img class="partners__logo" src="assets/images/partners2.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Footer -->
+        <footer class="footer">
+
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__logo">
+                        <div class="footer__logo-link">
+                            <a class="logo_link"  href="index.html">
+                                <div class="footer__logo-img">
+                                    <img class="img" src="assets/images/HeaderLogo.svg" alt="">
+                                </div>
+                                <div class="footer__logo-title">
+                                    <img class="img" src="assets/images/HeaderText.svg" alt="">
+
+                                    <img class="img" src="assets/images/HeaderSub.svg" alt="">
+                                </div>
+                            </a>
+                            <div class="footer__text">
+                                <p>В любой игре с любым читом возможно получить блокировку аккаунта. Играйте максимально аккуратно.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="footer-icon">
+                        <a class="footer__item" href="#" target="_blank">
+                            <svg class="footer__icon">
+                                <use xlink:href="#discord"></use>
+                            </svg>
+                        </a>
+
+                        <a class="footer__item" href="#" target="_blank">
+                            <svg class="footer__icon footer__icon-tel">
+                                <use xlink:href="#telegram"></use>
+                            </svg>
+                        </a>
+
+                        <a class="footer__item" href="#" target="_blank">
+                            <svg class="footer__icon">
+                                <use xlink:href="#vk"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Under -->
+            <div class="under">
+
+                <div class="container">
+                    <div class="under__inner">
+                        <div class="under__text">© 2021 versus-hack.com - Копирование и распространение материала запрещено.</div>
+                        <div class="under__text">Почта для жалоб: <a class="under__link" href="#" mailto="admin@versus-hack.com">admin@versus-hack.com</a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+<!-- Javascript -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
